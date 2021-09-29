@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAKHRI JARAR</title>
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="shortcut icon" type="image" href="../img/logo6 (2).png">
+    </head>
+    <body>
+        <div class="popup">
+            <div class="contentbox">
+                <div class="close"></div>
+                <div class="imgbx">
+                   <img src="../p/img/warning2.png">
+                </div>
+            </div>
+        </div>
+
+<!-- Automatic show popup after 2seconds of page load-->
+<script>
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');
+
+    window.onload = function(){
+        setTimeout(function(){
+            popup.style.display = "block";
+
+            // Add some time delay to show popup
+        }, )
+    }
+
+    close.addEventListener('click', () => {
+        popup.style.display = "none";
+    })
+</script>
+
+    </body>
+</html>
